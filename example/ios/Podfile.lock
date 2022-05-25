@@ -79,6 +79,9 @@ PODS:
   - GoogleMLKit/BarcodeScanning (2.4.0):
     - GoogleMLKit/MLKitCore
     - MLKitBarcodeScanning (~> 1.5.0)
+  - GoogleMLKit/ImageLabeling (2.4.0):
+    - GoogleMLKit/MLKitCore
+    - MLKitImageLabeling (~> 1.4.0)
   - GoogleMLKit/MLKitCore (2.4.0):
     - MLKitCommon (~> 4.0.0)
   - GoogleToolboxForMac/DebugUtils (2.3.2):
@@ -116,6 +119,17 @@ PODS:
     - GoogleUtilitiesComponents (~> 1.0)
     - GTMSessionFetcher/Core (~> 1.1)
     - Protobuf (~> 3.12)
+  - MLKitImageLabeling (1.4.0):
+    - MLKitCommon (~> 4.0)
+    - MLKitImageLabelingCommon (~> 2.0)
+    - MLKitVision (~> 2.0)
+    - MLKitVisionKit (~> 3.0)
+  - MLKitImageLabelingCommon (2.0.0):
+    - MLKitCommon (~> 4.0)
+    - MLKitVision (~> 2.0)
+  - MLKitObjectDetectionCommon (2.0.0):
+    - MLKitCommon (~> 4.0)
+    - MLKitVision (~> 2.0)
   - MLKitVision (2.0.0):
     - GoogleToolboxForMac/Logger (~> 2.1)
     - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
@@ -123,6 +137,11 @@ PODS:
     - MLImage (= 1.0.0-beta1)
     - MLKitCommon (~> 4.0)
     - Protobuf (~> 3.12)
+  - MLKitVisionKit (3.0.0):
+    - MLKitCommon (~> 4.0)
+    - MLKitImageLabelingCommon (~> 2.0)
+    - MLKitObjectDetectionCommon (~> 2.0)
+    - MLKitVision (~> 2.0)
   - nanopb (2.30908.0):
     - nanopb/decode (= 2.30908.0)
     - nanopb/encode (= 2.30908.0)
@@ -428,6 +447,9 @@ PODS:
   - vision-camera-code-scanner (0.2.0):
     - GoogleMLKit/BarcodeScanning
     - React-Core
+  - vision-camera-image-labeler (0.1.6):
+    - GoogleMLKit/ImageLabeling
+    - React-Core
   - VisionCamera (2.9.4):
     - React
     - React-callinvoker
@@ -492,6 +514,7 @@ DEPENDENCIES:
   - RNReanimated (from `../node_modules/react-native-reanimated`)
   - RNScreens (from `../node_modules/react-native-screens`)
   - vision-camera-code-scanner (from `../..`)
+  - vision-camera-image-labeler (from `../node_modules/vision-camera-image-labeler`)
   - VisionCamera (from `../node_modules/react-native-vision-camera`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
@@ -518,7 +541,11 @@ SPEC REPOS:
     - MLImage
     - MLKitBarcodeScanning
     - MLKitCommon
+    - MLKitImageLabeling
+    - MLKitImageLabelingCommon
+    - MLKitObjectDetectionCommon
     - MLKitVision
+    - MLKitVisionKit
     - nanopb
     - OpenSSL-Universal
     - PromisesObjC
@@ -590,6 +617,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-screens"
   vision-camera-code-scanner:
     :path: "../.."
+  vision-camera-image-labeler:
+    :path: "../node_modules/vision-camera-image-labeler"
   VisionCamera:
     :path: "../node_modules/react-native-vision-camera"
   Yoga:
@@ -622,7 +651,11 @@ SPEC CHECKSUMS:
   MLImage: 647f3d580c10b3c9a3f6154f5d7baead60c42a0c
   MLKitBarcodeScanning: 9fee06fcf50972f0d816ac8a6af29cee9838e6a6
   MLKitCommon: 923bcf261636f36af5fbf329b1643ea3cd69468b
+  MLKitImageLabeling: e231d417e0dd61fd55968b816a2325689a73711c
+  MLKitImageLabelingCommon: de04cc0c42e32e6ab95de1ed28197e1967d1cc6a
+  MLKitObjectDetectionCommon: bf21d65ff3ad05fe11164b4c4e4dfd1f5cca84b7
   MLKitVision: 53b8f93a864c8d9740f7f09041911f2e64150ec8
+  MLKitVisionKit: 01b691332ab14e60b39560bab955932c7303b76f
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   OpenSSL-Universal: 1aa4f6a6ee7256b83db99ec1ccdaa80d10f9af9b
   PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
@@ -654,6 +687,7 @@ SPEC CHECKSUMS:
   RNReanimated: e8afbe2a9e08e9e778ea72ddb1a8533445812621
   RNScreens: 01ab149b5dd5c27f5ff26741b1d2bdf2cee1af35
   vision-camera-code-scanner: dda884a7f3ec8243a2a6d6489b91860648371bca
+  vision-camera-image-labeler: 44dc35bea2ce7a6967d1033e48a210500a50be7d
   VisionCamera: dcbcdf02e8a6ea3c03bf741a962701fe81f0950e
   Yoga: 32a18c0e845e185f4a2a66ec76e1fd1f958f22fa
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a

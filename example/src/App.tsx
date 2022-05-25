@@ -12,6 +12,7 @@ import {
   BarcodeFormat,
   Barcode,
 } from 'vision-camera-code-scanner';
+import { labelImage } from 'vision-camera-image-labeler';
 
 export default function App() {
   const [hasPermission, setHasPermission] = React.useState(false);
@@ -25,6 +26,8 @@ export default function App() {
       checkInverted: true,
     });
     runOnJS(setBarcodes)(data);
+    const labels = labelImage(frame);
+    console.log(labels);
   }, []);
 
   React.useEffect(() => {
