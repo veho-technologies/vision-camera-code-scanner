@@ -10,8 +10,8 @@
   },
   "dependencies": {
     "react": "17.0.2",
-    "react-native": "0.66.3",
-    "react-native-reanimated": "2.4.1",
+    "react-native": "0.69.12",
+    "react-native-reanimated": "2.10.0",
     "react-native-screens": "3.5.0",
     "react-native-vision-camera": "^2.9.4"
   },
@@ -22,6 +22,30 @@
     "metro-react-native-babel-preset": "^0.66.2"
   },
   "resolutions": {
-    "**/react-native-reanimated": "2.4.1"
+    "**/react-native-reanimated": "2.10.0",
+    "shell-quote": "1.11.0",
+    "minimist": "1.2.6",
+    "plist": "3.0.5",
+    "brace-expansion": "1.1.21",
+    "minimatch": "3.1.4",
+    "js-yaml": "3.15.2",
+    "browserslist": "4.28.7",
+    "joi": "17.13.8",
+    "lodash": "4.18.0",
+    "picomatch": "2.3.2",
+    "compression": "1.8.2",
+    "cross-spawn": "6.0.6",
+    "node-fetch": "2.6.7",
+    "@babel/runtime": "7.26.10",
+    "@sideway/formula": "3.0.1",
+    "react-devtools-core": "4.28.4",
+    "@babel/core": "7.29.6",
+    "ip": "1.1.9",
+    "on-headers": "1.1.0",
+    "serve-static": "1.16.0",
+    "**/react-devtools-core/ws": "7.5.11",
+    "**/cli-doctor/strip-ansi/ansi-regex": "4.1.1",
+    "**/ansi-fragments/strip-ansi/ansi-regex": "4.1.1",
+    "**/core-js-compat/semver": "7.5.2"
   }
 }
